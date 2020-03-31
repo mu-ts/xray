@@ -1,0 +1,43 @@
+{
+  "name": "@mu-ts/xray",
+  "version": "1.0.0",
+  "description": "Helpers for working with AWS XRAY.",
+  "main": "./lib/index",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "nyc mocha -r ts-node/register spec/**/*.spec.ts",
+    "coverage": "nyc report --reporter text-summary",
+    "coverage-export": "nyc report --reporter=lcov > coverage.lcov",
+    "lint": "tslint -p .",
+    "clean": "rm -rf coverage lib .nyc_output"
+  },
+  "files": [
+    "lib/*",
+    "README.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-ts/xray.git"
+  },
+  "keywords": [
+    "mu-ts",
+    "xray",
+    "tracing"
+  ],
+  "author": "matt.filion@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mu-ts/xray/issues"
+  },
+  "homepage": "https://github.com/mu-ts/xray#readme",
+  "dependencies": {
+    "@mu-ts/logger": "^3.0.6",
+    "aws-xray-sdk": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "typescript": "^3.8.2"
+  }
+}

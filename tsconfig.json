@@ -1,0 +1,30 @@
+/* Reference: https://www.typescriptlang.org/docs/handbook/compiler-options.html */
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "declaration": true,
+    "strict": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [
+      "ES2016"
+    ],
+    "target": "ES2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "*.spec/**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
