@@ -1,8 +1,9 @@
 {
   "name": "@mu-ts/xray",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Helpers for working with AWS XRAY.",
   "main": "./lib/index",
+  "types": "./lib/index",
   "scripts": {
     "build": "tsc -p .",
     "test": "nyc mocha -r ts-node/register spec/**/*.spec.ts",
@@ -26,6 +27,7 @@
     "xray",
     "tracing"
   ],
+  "private": false,
   "author": "matt.filion@gmail.com",
   "license": "ISC",
   "bugs": {

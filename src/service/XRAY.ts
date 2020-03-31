@@ -19,8 +19,8 @@ export class XRAY {
 
   private static get instance() {
     if (!this._i) {
-      this.instance.logger.debug('instance()', 'new instance created');
       this._i = new XRAY();
+      this.instance.logger.debug('instance()', 'new instance created');
       setLogger(this.instance.logger);
     }
     return this._i;
