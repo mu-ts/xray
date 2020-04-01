@@ -26,7 +26,8 @@ Available capture points.
 * asyncFunc<T>(name: string, fcn: (subsegment?: Subsegment) => T, parent?: Segment | Subsegment);
 * callbackFunc<S extends any[], T>(name: string, fcn: (...args: S) => T, parent?: Segment | Subsegment)
 * func<T>(name: string, fcn: (subsegment?: Subsegment) => T, parent?: Segment | Subsegment)
-
+  
+<!--
 ### @capture
 
 You can use the `@asyncFunc` decorator on a Promisified function and have it appear within the details of a segment in XRAY. This decorator is a synonym for `XRAY.capture.asyncFunc`.
@@ -48,3 +49,4 @@ class MyX {
   public someFunc(){}
 }
 ```
+-->
