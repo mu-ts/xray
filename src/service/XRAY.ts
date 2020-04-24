@@ -22,6 +22,7 @@ export class XRAY {
       this._i = new XRAY();
       this.instance.logger.debug('instance()', 'new instance created');
       setLogger(this.instance.logger);
+      process.env.AWS_XRAY_CONTEXT_MISSING = 'LOG_ERROR';
     }
     return this._i;
   }
