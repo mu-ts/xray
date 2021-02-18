@@ -1,6 +1,6 @@
 {
   "name": "@mu-ts/xray",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Helpers for working with AWS XRAY.",
   "main": "./lib/index",
   "types": "./lib/index",
@@ -35,11 +35,12 @@
   },
   "homepage": "https://github.com/mu-ts/xray#readme",
   "dependencies": {
-    "@mu-ts/logger": "^3.0.6",
-    "aws-xray-sdk": "^2.5.0"
+    "@mu-ts/logger": "^3.1.1",
+    "aws-xray-sdk": "^3.2.0"
   },
   "devDependencies": {
-    "@types/node": "^13.7.6",
-    "typescript": "^3.8.2"
+    "@types/node": "^13.13.42",
+    "aws-sdk": "^2.846.0",
+    "typescript": "^3.9.9"
   }
 }
