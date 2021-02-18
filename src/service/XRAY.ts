@@ -17,6 +17,10 @@ export class XRAY {
     return this.instance.capture;
   }
 
+  public static debug() {
+    process.env.AWS_XRAY_DEBUG_MODE = 'TRUE';
+  }
+
   private static get instance() {
     if (!this._i) {
       this._i = new XRAY();
